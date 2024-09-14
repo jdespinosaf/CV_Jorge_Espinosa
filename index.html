@@ -117,27 +117,9 @@
             margin-bottom: 40px;
         }
         
-       /* Controlar el desbordamiento de texto */
-        .container, .main-content, .sidebar {
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-        }
-
-        /* Asegurar que las imágenes y otros elementos no se desborden */
-        img, .container, .main-content, .sidebar {
-            max-width: 100%;
-            height: auto;
-        }
-        
+       
         /* Estilos responsivos para pantallas pequeñas */
         @media screen and (max-width: 768px) {
-            .container, .main-content, .sidebar {
-                padding: 10px; /* Reducir padding en móviles */
-                margin: 0; /* Eliminar márgenes que causen problemas */
-            }
-            h1, h2, h3, p {
-                font-size: 90%; /* Reducir el tamaño de los textos */
-            }
             .container {
                 flex-direction: column; /* Cambia a columna en pantallas pequeñas */
                 margin: 0;
