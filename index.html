@@ -84,6 +84,19 @@
         .section {
             margin-bottom: 40px;
         }
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Los elementos se apilan en pantallas pequeñas */
+                margin: 0;
+            }
+            .sidebar, .main-content {
+                width: 100%; /* Ocupan el ancho completo */
+            }
+            .sidebar img {
+                width: 100px; /* Ajusta el tamaño de las imágenes */
+                height: 100px;
+            }
+        }
     </style>
 </head>
 <body>
