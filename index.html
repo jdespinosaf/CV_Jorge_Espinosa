@@ -85,19 +85,25 @@
             margin-bottom: 40px;
         }
         @media screen and (max-width: 768px) {
-            .container {
-                flex-direction: column; /* Los elementos se apilan en pantallas pequeñas */
-                margin: 0;
-            }
-            .sidebar, .main-content {
-                width: 100%; /* Ocupan el ancho completo */
-                padding: 15px;
-            }
-            .sidebar img {
-                width: 100px; /* Ajusta el tamaño de las imágenes */
-                height: 100px;
-            }
-        }
+    .container {
+        flex-direction: column;
+        margin: 0;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+        padding: 15px; /* Reducir el padding en móviles */
+    }
+    .sidebar img {
+        width: 100px;
+        height: 100px;
+    }
+    .sidebar h1 {
+        font-size: 18px; /* Ajustar el tamaño del título en móviles */
+    }
+    .sidebar p, .main-content p {
+        font-size: 14px; /* Ajustar el tamaño del texto en móviles */
+    }
+}
     </style>
 </head>
 <body>
